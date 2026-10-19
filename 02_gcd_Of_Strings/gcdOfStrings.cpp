@@ -3,7 +3,7 @@
 #include <numeric>
 using namespace std;
 
-int gcd1(int a, int b) {
+int gcd(int a, int b) {
     while (b != 0) {
         a %= b;
         swap(a, b);
@@ -12,7 +12,7 @@ int gcd1(int a, int b) {
 }
 string gcdOfStrings(string str1, string str2) {
     if (str1+str2 != str2+str1) return "";
-    int gcdLen = gcd1(str1.length(), str2.length());
+    int gcdLen = gcd(str1.length(), str2.length());
     return str1.substr(0, gcdLen); 
 }
 int main()
