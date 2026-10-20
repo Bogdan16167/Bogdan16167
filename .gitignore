@@ -9,3 +9,7 @@
 *.dSYM/
 *.o
 *.out
+.DS_Store
+*.dSYM
+.DS_Store
+*.dSYM
